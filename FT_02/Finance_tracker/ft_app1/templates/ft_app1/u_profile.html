@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="{% static 'css/u_profile.css' %}">
+</head>
+<body>
+
+<Body background="{% static 'prof_bg.jpeg' %}">  
+	<div class="container">
+		<div class="user-image">
+			<img src="{% static 'prof_def.jpeg' %}"
+"
+			alt="this image contains user-image">
+		</div>
+
+		<div class="content">
+			<h3 class="name">
+                {{user.username}}</h3>
+             <p class="email">
+                {{user.email}}
+             <p class="country">
+                India</p>
+			<a class="effect effect-2" href="{% url 'logout' %}">
+				LOG OUT
+			</a>
+		</div>
+	</div>
+	
+
+</body>
+
+</html>

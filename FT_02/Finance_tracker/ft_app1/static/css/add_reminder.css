@@ -1,0 +1,31 @@
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 90px;
+    }
+    
+    label {
+    font-weight: bold;
+    margin-right: 10px;
+    }
+    
+    input[type="text"], input[type="number"], input[type="date"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    }
+    
+    input[type="submit"]:hover {
+    opacity: 0.8;
+    }

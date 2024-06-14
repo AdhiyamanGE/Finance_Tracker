@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{% static 'css/navbar_style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/link_view.css' %}">
+ </head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#">CHRIMATA</a></div>
+        <ul class="links">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li>
+            <a href="#" class="desktop-link">Income</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <a href="{% url 'addinc' %}">add income</a>
+              <li><a href="view_income.html">view incomes</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Expense</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services</label>
+            <ul>
+              <li><a href="{% url 'addexp' %}">add expense</a></li>
+              <li><a href="{% url 'viewexp' %}">view expense</a></li>
+          </ul>
+          <li>
+            <a href="#" class="desktop-link">reminder</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services</label>
+            <ul>
+              <li><a href="{% url 'addrem' %}">add reminder</a></li>
+              <li><a href="{% url 'viewrem' %}">view reminder</a></li>
+              </ul>
+            <li>
+              <a href="#" class="desktop-link">Link</a>
+              <input type="checkbox" id="show-services">
+              <label for="show-services">Services</label>
+              <ul>
+                <li><a href="{% url 'link' %}">Link Profiles</a></li>
+                <li><a href="{% url 'linkview' %}">View</a></li>
+                </ul>
+              </div>
+            <li>
+              <nav>
+                <a href="{% url 'uprof' %}">
+                  <img src="{% static 'prof_def.jpeg' %}" alt="profile" height="30" width="30">
+                </a>
+              </nav>
+        
+    </nav>
+  </div>
+
+  <table>
+     <link rel="stylesheet" href="VIEW.css">
+            <tr>
+              <th>User Name</th>
+              <th>Date</th>
+              <th>Monthly Income</th>
+              <th>Monthly Expense</th>
+            </tr>
+            <tr>
+              <td>admin</td>
+              <td>01/01/2022</td>
+              <td>3000</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>User 1</td>
+              <td>01/15/2022</td>
+              <td>3000</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td>User 2 </td>
+              <td>02/20/2023</td>
+              <td>4000</td>
+              <td>600</td>
+            </tr>
+          </table>
+</body>
+</html>
